@@ -16,6 +16,8 @@ input.addEventListener('keypress', (event) => {
         } else if (valor.includes('boston celtics') || valor.includes('boston') || valor.includes('celtics')) {
       mensagem.textContent = 'Uau, seu time é o Boston Celtics, ou você é velho ou um dinossauro! 🦕🍀';
       mensagem.style.color = '#00ff00';
+        } else if (valor.includes('atlanta hawks') || valor.includes('atlanta') || valor.includes('hawks')) {
+          mensagem.textContent = 'Uau, o melhor jogador do seu time é um calvo! 🦅😄 ';
         } else if (valor.includes('lakers') || valor.includes('los angeles lakers') || valor.includes('los angeles')) {
       mensagem.textContent = 'Se o papai LeBron (E o Luka) sair, teu time vai pro saco... 🏀👑';
       mensagem.style.color = 'yellow';
