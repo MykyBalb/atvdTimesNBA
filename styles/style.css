@@ -1,0 +1,92 @@
+.bodi {
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #25254d, #0e508a);
+    color: #fff;
+    text-align: center;
+}
+.headir {
+    margin-bottom: 30px;
+    color: #00ff00;
+
+
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ff0026;
+}
+
+header p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+#inputInterativo {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #ff4757;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#inputInterativo:focus {
+    border-color: #ff6b81;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#inputInterativo::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo da mensagem */
+#mensagem {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    max-width: 80%;
+}
+
+#mensagem:hover {
+    transform: scale(1.05);
+}
+
+/* Efeitos de cor para as mensagens específicas */
+#mensagem[data-time="Boston Celltics"],
+#mensagem[data-time="Boston"] {
+    background-color: rgba(0, 128, 0, 0.2);
+    color: #00ff00;
+}
+
+#mensagem[data-time="Lakers"] {
+    background-color: rgba(233, 104, 104, 0.2);
+    color: #601414;
+}
+
+#mensagem[data-time="Warriors"] {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+#mensagem[data-time="Bulls"] {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ff0000;
+}
+
