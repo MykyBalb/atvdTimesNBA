@@ -22,7 +22,7 @@ input.addEventListener('keypress', (event) => {
     } else if (valor.includes('warriors') || valor.includes('golden state warriors') || valor.includes('golden state') || valor.includes('state') || valor.includes('golden')) {
       mensagem.textContent = 'Uau.. mais modinha que você só a Gucci';
       mensagem.style.color = 'rgb(0, 234, 255)';
-    } else if (valor.includes('bulls') || valor.includes('chicago bulls')) {
+    } else if (valor.includes('bulls') || valor.includes('chicago bulls') || valor.includes('chicago')) {
       mensagem.textContent =
         'LETS GO BUULLS, melhor time e com o legado do maior da história. 🐂🐂';
     } else {
