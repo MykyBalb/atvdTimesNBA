@@ -53,12 +53,24 @@ async function clipboardCopy(team) {
     } else {
         console.warn(`Elemento com id "${team}" não encontrado.`);
     }
-
     const img = document.querySelector("img.jes");
     if (img) {
+        // Desativa transição temporariamente para resetar
+        img.style.transition = 'none';
+        img.style.opacity = '0';
+
+        // Força reflow para garantir que a mudança foi aplicada
+        img.offsetHeight;
+
+        // Reativa transição para opacidade
+        img.style.transition = 'opacity 0.3s ease';
         img.style.opacity = '1';
-        setTimeout(() => {
+
+        // Limpa timeout anterior para evitar sobreposição
+        clearTimeout(img._timeoutId);
+        img._timeoutId = setTimeout(() => {
             img.style.opacity = '0';
-        }, 500);
+        }, 700);
     }
 }
+

@@ -34,9 +34,6 @@ header p {
 }
 
 .listaTimes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     list-style: none;
     padding: 0;
     margin: 20px 0;
@@ -116,5 +113,11 @@ header p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease;
+}
+img.jes {
+    opacity: 0;
+    position: absolute; /* ou absolute, depende do seu layout */
+    top: 50%;
+    right: 50%;
+    pointer-events: none; /* para a imagem não interferir nos cliques */
 }
